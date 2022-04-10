@@ -8,23 +8,21 @@ body{
   position: relative;
   text-align: center;
   color: white;
-  font-family: 'DOCKER', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .Wrapper{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-
-.content {
-  height: 100vmin;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
+
 
 .Reactjs-logo{
   height: 40vmin;
@@ -33,16 +31,8 @@ body{
 
 .Docker-logo {
   height: 3.5vmin;
-  position: absolute;
 }
 
-/* .Ocean{
-  width: 50vw;
-  height: 35.2vh;
-  position: absolute;
-  background-color: #2b485c;
-  bottom: 0;
-} */
 
 @media (prefers-reduced-motion: no-preference) {
   .Reactjs-logo {

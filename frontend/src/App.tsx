@@ -6,11 +6,15 @@ import './styles/App.css'
 function App() {
     return (
       <div className='Wrapper'>
-        <div className="content">
           <img src={reactjsLogo} className="Reactjs-logo" alt="reactjs-logo" />
-          <img src={dockerLogo} className="Docker-logo" alt="docker-logo" />
-        </div>
-        <h1>Hello from Docker</h1>
+          
+          <h1>
+            Hello from D
+            <span><img src={dockerLogo} className="Docker-logo" alt="docker-logo" /></span>
+            cker
+          </h1>
+
+          <span>See the <a href="http://localhost:8000/api/todos">API</a></span>
       </div>
       
     )
