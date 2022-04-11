@@ -2,35 +2,36 @@
 
 clone the repository
 
-```
+```bash
 git clone https://github.com/Xandowski/sample-react-django-docker.git
 ```
 
 optional: create a viurtalenv
 
-```
+```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
 then generate the .env file
 
-```
+```bash
 python3 backend/contrib/env_gen.py
 ```
 
 define the postgres variables on .env file.:
 
-```
+```yml
 DATABASE_URL=postgres://USER:PASSWORD@HOST:PORT/NAME
 POSTGRES_DB=
 POSTGRES_USER=
 POSTGRES_PASSWORD=
 DB_HOST=postgres
 ```
+
 **obs:** if you are going to use other values, you need to change on docker-compose file:
 
-```
+```yml
 services:
   db:
     image: postgres
@@ -42,10 +43,9 @@ services:
       - POSTGRES_PASSWORD=
 ```
 
-
 the folder structure should be look like this:
 
-```
+```bash
 ├── README.md
 ├── backend
 │   ├── Dockerfile
@@ -98,11 +98,10 @@ the folder structure should be look like this:
 
 the run the docker command:
 
-```
+```bash
 docker compose up
 or
 docker-compose up
 ```
 
-this will bring up the api on localhost:8000/api/todos, the react app on localhost:3000, postgres and adminer on localhost:8080 
-
+this will bring up the api on localhost:8000/api/todos, the react app on localhost:3000, postgres and adminer on localhost:8080
